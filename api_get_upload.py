@@ -1,10 +1,6 @@
 from flask import Flask, jsonify, request
-from flaskTest import *
-import flaskTest
-import xml.etree.ElementTree as ET
 import requests
 
-from suhas import *
 app = Flask(__name__)
 
 # @app.route("/")

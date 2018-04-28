@@ -11,6 +11,11 @@ app = Flask(__name__)
 #         dict = {x:y}
 #         return jsonify(dict)
 
+
+@app.route("/")
+def index():
+	return "Connected"
+
 @app.route("/uploadlog/",methods = ['GET', 'POST', 'DELETE'])
 def getPostDataUploadLog():
     if request.method == 'POST':
